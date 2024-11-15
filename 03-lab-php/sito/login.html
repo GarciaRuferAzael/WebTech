@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Blog TW - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog TW - Login</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
     <header>
@@ -9,30 +11,27 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="archivio.html">Archivio</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Home</a></li><li><a href="archivio.html">Archivio</a></li><li><a href="contatti.html">Contatti</a></li><li><a href="login.html">Login</a></li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Autori del Blog</h2>
-            <table>
-                <tr>
-                    <th id="autore">Autore</th><th id="email">Email</th><th id="argomenti">Argomenti</th>
-                </tr>
-                <tr>
-                    <th id="ginopino">Gino Pino</th><td headers="email ginopino">ginopino@blogtw.com</td><td headers="argomenti ginopino">HTML, CSS, JS</td>
-                </tr>
-                <tr>    
-                    <th id="cippalippa">Cippa Lippa</th><td headers="email cippalippa">cippalippa@blogtw.com</td><td headers="argomenti cippalippa">PHP</td>
-                </tr>
-            </table>
-        </section>
+        <form action="#" method="POST">
+            <h2>Login</h2>
+            <ul>
+                <li>
+                    <label for="username">Username:</label><input type="text" id="username" name="username" />
+                </li>
+                <li>
+                    <label for="password">Password:</label><input type="password" id="password" name="password" />
+                </li>
+                <li>
+                    <input type="submit" name="submit" value="Invia" />
+                </li>
+            </ul>
+        </form>
     </main><aside>
         <section>
-            <h2>Post Popolari</h2>
+            <h2>Post Casuali</h2>
             <ul>
                 <li>
                     <img src="img/html5-js-css3.png" alt="" />
@@ -57,7 +56,7 @@
         </section>
     </aside>
     <footer>
-        <p>Tecnologie Web - A.A. 2021/2022</p>
+        <p>Tecnologie Web - A.A. 2024/2025</p>
     </footer>
 </body>
 </html>
