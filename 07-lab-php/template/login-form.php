@@ -1,4 +1,4 @@
-        <form action="#" method="POST">
+        <form action="login.php" method="POST">
             <h2>Login</h2>
             <?php if(isset($templateParams["errorelogin"])): ?>
             <p><?php echo $templateParams["errorelogin"]; ?></p>
