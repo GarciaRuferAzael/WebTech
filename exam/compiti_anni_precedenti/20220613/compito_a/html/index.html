@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Titolo</legend>
+            <p>
+                <label for="titolo">Seleziona titolo:</label>
+                <select id="titolo" name="titolo">
+                    <option value="1">Sistemi operativi. Concetti ed esempi, di Abraham Silberschatz et al.</option>
+                    <option value="2">Linguaggi di programmazione. Principi e paradigmi, di Maurizio Gabbrielli e Simone Martini</option>
+                    <option value="3">I moderni sistemi operativi, di Andrew Tanenbaum</option>
+                    <option value="4">Fondamenti di reti di calcolatori, di Andrew Tanenbaum</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Copertina</legend>
+            <p>
+                <input type="radio" id="copertina_1" name="copertina" value="1" />
+                <label for="copertina_1">copertina flessibile</label>
+            <label>
+                <input type="radio" id="copertina_2" name="copertina" value="2" />
+                <label for="copertina_2">copertina rigida</label>
+            </label>
+            <label>
+                <input type="radio" id="copertina_3" name="copertina" value="3" />
+                <label for="copertina_3">formato elettronico</label>
+            </label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Consegna</legend>
+            <p><label>Nome: <input type="text" name="nome" /></label></p>
+            <p><label>Cognome: <input type="text" name="conome" /></label></p>
+            <p><label>Via: <input type="text" name="via" /></label></p>
+            <p><label>Numero civico: <input type="text" name="civico" /></label></p>
+            <p><label>Citt&agrave;: <input type="text" name="citta" /></label></p>
+            <p><label>Provincia: <input type="text" name="provincia" /></label></p>
+            <p><label>CAP: <input type="text" name="cap" /></label></p>
+            <p>Orario flessibile:
+                <input type="radio" name="orario" id="orario_1" value="1" />
+                <label for="orario_1">S&igrave;</label>
+                <input type="radio" name="orario" id="orario_2" value="0" />
+                <label for="orario_2">No</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label>Pagamento alla consegna: <input type="checkbox" name="pagamento" /></label>
+        </p>
+
+        <p>
+            <label for="reset">Cancella</label>
+            <input id="reset" type="reset" value="Cancella" />
+            <input type="submit" value="Invia" />
+        </p>
+    </form>
+</body>
+</html>

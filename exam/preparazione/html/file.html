@@ -1,0 +1,96 @@
+<!-- Scrivere il codice HTML5 valido, ben formato, accessibile (WCAG 2.0, livello A) e semanticamente corretto per realizzare un documento che contenga una intestazione di primo livello “Contatti” e un form diviso in due parti:
+
+
+1. La prima parte, dal titolo “Informazioni Anagrafiche”, deve consentire i seguenti input:
+ - Nome, Cognome, Codice Fiscale, Data di nascita, Luogo di Nascita, Indirizzo.
+2. La seconda parte, dal titolo “Preferenze”, deve consentire i seguenti input:
+ - Assicurazione, a scelta (radio) tra Primo Livello, Secondo Livello e Terzo Livello.
+ - Mezzo Preferito (select) a scelta tra Automobile, Moto, Bicicletta e Monopattino.
+ - Automunito (checkbox).
+ - Descrizione (textarea).
+3. Bottoni di Submit e Cancella della form. -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatti</title>
+</head>
+<body>
+    <h1>Contatti</h1>
+
+    <form method="POST" action="#">
+        <fieldset><legend>Informazioni Anagrafiche</legend>
+            <label>
+                Nome:
+                <input type="text" name="nome" />
+            </label>
+
+            <label>
+                Cognome:
+                <input type="text" name="cognome" />
+            </label>
+
+            <label>
+                Codice Fiscale:
+                <input type="text" maxlength="16" name="codice_fiscale" />
+            </label>
+
+            <label>
+                Data di nascita:
+                <input type="date" name="data_nascita" />
+            </label>
+
+            <label>
+                Luogo di nascita:
+                <input type="text" name="luogo_nascita" />
+            </label>
+
+            <label>
+                Indirizzo:
+                <input type="text" name="indirizzo" />
+            </label>
+        </fieldset>
+
+        <fieldset><legend>Preferenze</legend>
+            <p>Assicurazione:</p>
+            <label>
+                <input type="radio" name="assicurazione" value="1" />
+                Primo Livello
+            </label>
+
+            <label>
+                <input type="radio" name="assicurazione" value="2" />
+                Secondo Livello
+            </label>
+
+            <label>
+                <input type="radio" name="assicurazione" value="3" />
+                Terzo Livello
+            </label>
+
+            <label>
+                Mezzo Preferito:
+                <select name="mezzo">
+                    <option value="auto">Automobile</option>
+                    <option value="moto">Moto</option>
+                    <option value="bici">Bicicletta</option>
+                    <option value="monopattino">Monopattino</option>
+                </select>
+            </label>
+
+            <label>
+                Automunito:
+                <input type="checkbox" name="automunito" />
+            </label>
+
+            <label>
+                Descrizione:
+                <textarea rows="10" cols="30" name="descrizione"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="reset" value="Cancella" />
+        <input type="submit" value="Invia" />
+    </form>
+</body>
+</html>

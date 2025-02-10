@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Appelli esame</title>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Appelli esame
+      </caption>
+      <thead>
+        <tr>
+          <th id="giorno" scope="col">Giorno</th>
+          <th id="aula" scope="col">Aula</th>
+          <th id="9_10" scope="col">9:00 - 10:00</th>
+          <th id="10_11" scope="col">10:00 - 11:00</th>
+          <th id="11_12" scope="col">11:00 - 12:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <th rowspan="2" id="lun" headers="giorno" scope="rowgroup">Luned&igrave;</th>
+            <th id="aula_29" headers="aula" scope="row">Aula 2.9</th>
+            <td colspan="2" headers="aula_29 9_10 10_11">Sistemi Operativi</td>
+            <td headers="aula_29 11_12">Informatica e diritto</td>
+        </tr>
+        <tr>
+            <th id="lab_31" headers="lun" scope="row">Laboratorio 3.1</th>
+            <td headers="lab_31 9_10">Reti di comunicazione</td>
+            <td colspan="2" headers="lab_31 10_11 11_12">Basi di dati</td>
+        </tr>
+        <tr>
+            <th rowspan="2" id="mar" headers="giorno" scope="rowgroup">Mart&igrave;</th>
+            <th id="aula_25" headers="mar" scope="row">Aula 2.5</th>
+            <td headers="aula_25 9_10">Programmazione</td>
+            <td headers="aula_25 10_11">Analisi Matematica</td>
+            <td headers="aula_25 11_12">Algoritmi e strutture dati</td>
+        </tr>
+        <tr>
+            <th id="lab_33" headers="mar" scope="row">Laboratorio 3.3</th>
+            <td colspan="2" headers="lab_33 9_10 10_11">Tecnologie Web</td>
+            <td headers="lab_33 11_12">Programmazione ad oggetti</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Orario delle lezioni</title>
+    <style>
+        table, td, th {
+            border: solid black 1px;
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <caption>Orario delle lezioni</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="2" scope="colgroup" id="lun">Lunedì</th>
+                    <th colspan="2" scope="colgroup" id="mar">Martedì</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th scope="col" headers="lun" id="lun_21">Aula 2.1</th>
+                    <th scope="col" headers="lun" id="lun_22">Laboratorio 2.2</th>
+                    <th scope="col" headers="mar" id="mar_21">Aula 2.1</th>
+                    <th scope="col" headers="mar" id="mar_22">Laboratorio 2.2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" id="9">9-10</th>
+                    <td rowspan="2" headers="lun_21 9 10">Sistemi multimediali</td>
+                    <td headers="lun_22 9">Programmazione</td>
+                    <td headers="mar_21 9">Analisi</td>
+                    <td rowspan="3" headers="mar_21 9 10 11">Sistemi Multimediali</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="10">10-11</th>
+                    <td rowspan="2" headers="lun_22 10 11">Tecnologie Web</td>
+                    <td headers="mar_21 10">Programmazione</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="11">11-12</th>
+                    <td headers="lun_21 11">Algebra</td>
+                    <td headers="mar_21 11">Fisica</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
