@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+
+h1, h2 {
+    background-color: darkgreen;
+    color: lightcoral;
+    font-size: 130%;
+    text-align: center;
+    border: 4px double darkgreen;
+    border-radius: 5px;
+    box-shadow: green 10px 10px 10px;
+}
+
+th {
+    text-align: center;
+    font-size: 120%;
+    color: darkgreen;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+table,
+th,
+td{
+    border: 3px solid green;
+}
